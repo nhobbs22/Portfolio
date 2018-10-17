@@ -1,0 +1,15 @@
+.navbar {
+    /*background: linear-gradient(to right, white 10%, rgb(250, 239, 238)70%, rgb(255, 229, 226)90%, rgb(255, 200, 178));
+    border: solid #7D2F24;
+    /*border-bottom: solid #360C07;*/
+    background: white;
+   /* border: solid .5px #FF7564;*/
+}
+.active {
+    font-weight: bold;
+    font:  #FF7564;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show.nav-link-override{
+    color: #FF7564
+}
