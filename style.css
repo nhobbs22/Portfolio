@@ -5,7 +5,7 @@
     background: white;
    /* border: solid .5px #FF7564;*/
 }
-.active {
+.nav-link.active {
     font-weight: bold;
     font:  #FF7564;
 }
