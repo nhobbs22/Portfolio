@@ -23,8 +23,130 @@
 </head>
 
 <style>
-
-</style>
+        /*@media (max-width: 576px) {
+            .container.refresh {
+                padding-top: 20%;
+            }
+        }
+    
+        @media (min-width: 768px) {
+            .container {}
+        }
+    
+        @media (min-width: 992px) {
+            .container {
+                padding-top: 30px;
+            }
+        }*/
+    
+        h1 {
+            font-size: 62px;
+            text-align: center;
+            font-family: coolvetica, sans-serif;
+            font-style: bold;
+            color: #082600;
+        }
+    
+        h2 {
+            font-size: 40px;
+            text-align: center;
+            font-family: coolvetica, sans-serif;
+            font-style: bold;
+            color: #082600;
+        }
+    
+        h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: #006B23;
+    
+        }
+    
+        .container {
+            text-align: center;
+        }
+    
+        .container.refresh {
+            padding-left: 8%;
+            padding-right: 8%;
+            padding-top: 175px;
+        }
+    
+        .row.howWorks {
+            padding-top: 150px;
+            padding-bottom: 25px;
+        }
+    
+        .row.images {
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+    
+        .row.titles {
+            padding-top:100px;
+        }
+    
+        @media (max-width: 768px) {
+            .container.refresh {
+                padding-top: 20%;
+            }
+            .col.big {
+                display: none;
+            }
+    
+            h1 {
+                font-size: 52px;
+            }
+    
+            .row.howWorks {
+                padding-top: 125px;
+                padding-bottom: 15px;
+            }
+        }
+    
+        @media (min-width: 769px) {
+            .col.small {
+                display: none;
+            }
+        }
+    
+         @media (min-width: 991px) and (max-width:1200px) {
+            h2 {
+                font-size: 32px;
+            }
+    
+            h3 {
+                font-size:16px;
+            }
+         }
+    
+        @media (min-width: 777px) and (max-width:990px) {
+            h2 {
+                font-size: 28px;
+            }
+    
+            h3 {
+                font-size:14px;
+            }
+        }
+    
+    
+        .col-12 {
+            padding-top:5px;
+        }
+    
+        a:link {
+            color:#006B23;
+            padding-bottom:5px;
+            text-decoration: underline;
+        }
+    
+        .col-md-4 {
+            padding-top:30px;
+            padding-bottom:20px;
+        }
+    </style>
 
 <body>
     <div class="container navigation">
@@ -51,6 +173,61 @@
             </div>
         </nav>
     </div>
-</body>
+
+    <div class="container refresh ">
+            <div class="row justify-content-center ">
+                <div class="col big ">
+                        <img src="refreshmain.png " class="img-fluid " alt="Responsive image ">   
+                </div>
+                <div class="col small ">
+                    <img src="refresh_mobile.png " class="img-fluid " alt="Responsive image ">
+                </div>
+            </div>
+            <div class="row howWorks justify-content-center ">
+                <h1>How It Works</h1>
+            </div>
+            <div class="row images">
+                <div class="col-12 col-md-4 ">
+                    <img src="scan2.png " class="img-fluid " alt="Responsive image "> 
+                </div>
+                <div class="col-12 col-md-4 ">
+                    <img src="track2.png " class="img-fluid " alt="Responsive image "> 
+                </div>
+                <div class="col-12 col-md-4 ">
+                    <img src="monitor2.png " class="img-fluid " alt="Responsive image "> 
+                </div>
+            </div>
+            <div class="row titles">
+                <div class="col-md-4">
+                    <h2>The Team</h2>
+                    <br>
+                    <h3>Natasha hobbs<br>
+                        Jennifer Frugaletti <br>
+                        John Manganaan
+                    </h3>
+                </div>
+                <div class="col-md-4">
+                    <h2>The Inspiration</h2>
+                    <br>
+                    <h3>How do we get people <br>
+                        to want to reduce their <br>
+                        food waste?
+                    </h3>
+                </div>
+                <div class="col-md-4">
+                    <h2>The Process</h2>
+                    <br>
+                    <h3>
+                            <a href="#YourAnchor">See Research Process</a>
+                            <br>
+                            <br>
+                            <a href="#YourAnchor2">See Design Process</a>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    
+    
+    </body>
 
 </html>
