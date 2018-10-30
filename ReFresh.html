@@ -10,6 +10,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
         crossorigin="anonymous">
+        <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8">
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -20,6 +21,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" type="image/png" href="logored.png">
+    
 </head>
 
 <style>
@@ -42,16 +44,16 @@
     h1 {
         font-size: 62px;
         text-align: center;
-        font-family: coolvetica, sans-serif;
-        font-style: bold;
+        font-family:'coolvetica_rg';
+        /*font-style: bold;*/
         color: #082600;
     }
 
     h2 {
         font-size: 40px;
         text-align: center;
-        font-family: coolvetica, sans-serif;
-        font-style: bold;
+        font-family: 'coolvetica_rg';
+        /*font-style: bold;*/
         color: #082600;
     }
 
@@ -102,19 +104,20 @@
     .trash-col {
         background-image: url("backgroundtrash.png");
         background-size: 95%;
-        height:329px;
+        height: 329px;
         background-repeat: no-repeat;
     }
 
     .earth-col {
         background-image: url("backgroundearth.png");
         background-size: 95%;
-        height:329px;
+        height: 329px;
         background-repeat: no-repeat;
 
-        
+
 
     }
+
     .smFont {
         font-size: 1.25vw;
     }
@@ -124,7 +127,7 @@
     }
 
     .smFont.padded {
-        margin-top: 53%;
+        margin-top: 51%;
     }
 
     @media (max-width: 768px) {
@@ -136,7 +139,7 @@
         }
 
         h1 {
-            font-size: 52px;
+            font-size: 50px;
             font-weight: 800
         }
 
@@ -148,17 +151,33 @@
         .smFont {
             font-size: 18px;
         }
+        .change {
+            font-size: 14px;
+        }
     }
 
-     @media (max-width: 585px) {
+    @media (max-width: 585px) {
         .smFont {
-             font-size: 2vw;
-         }
-     }
+            font-size: 2vw;
+        }
+
+
+        .change {
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: 48px;
+        }
+    }
 
     @media (min-width: 769px) {
         .col.small {
             display: none;
+        }
+
+        .change {
+            font-size: 14px;
         }
     }
 
@@ -171,6 +190,11 @@
         h3 {
             font-size: 16px;
         }
+
+
+        .change {
+            font-size: 16px;
+        }
     }
 
     @media (min-width: 777px) and (max-width:990px) {
@@ -180,6 +204,10 @@
         }
 
         h3 {
+            font-size: 14px;
+        }
+
+        .change {
             font-size: 14px;
         }
     }
@@ -213,6 +241,9 @@
         padding-bottom: 20px;
     }
 
+    .smFont.padded.bold {
+        font-weight: 600;
+    }
 </style>
 
 <body>
@@ -298,32 +329,42 @@
             <div class="col justify-content-center">
                 <h1>Why Food Waste?</h1>
                 <br>
-                <h4>
+                <br>
+                <h4 class="change">
                     <b>238 lbs</b> of food
                     <b>per person</b> is wasted yearly. Approx.
                     <b>2/3</b> of that food is still
                     <b>edible.</b>
                 </h4>
+                <br>
             </div>
         </div>
         <div class="row">
             <div class="trash-col col-md-6 col-sm-12 col-xs-12">
                 <div class="row justify-content-center">
                     <div class="col-md-10 col-sm-10 col-xs-10">
-                        <h4 class="smFont first">According to a study done by the <a href="https://www.nrdc.org/sites/default/files/wasted-2017-report.pdf">NRDC</a>,
-                             households are the main source of foodwaste. <b> 76 billion pounds</b> of food is wasted in households anually in the USA. </h4>
+                        <h4 class="smFont first">According to a study done by the
+                            <a href="https://www.nrdc.org/sites/default/files/wasted-2017-report.pdf">NRDC</a>, households are the main source of foodwaste.
+                            <b> 76 billion pounds</b> of food is wasted in households anually in the USA. </h4>
                     </div>
                 </div>
             </div>
             <div class="earth-col col-md-6 col-sm-12 col-xs-12">
                 <div class="row justify-content-center">
-                        <div class="col-md-10 col-sm-10 col-xs-10">
-                        <h4 class="smFont padded">Food waste = Methane Gas <br>
-                            Methane Gas = Rising Temperatures <br>
-                            Rising Temperatures = Climate Change <br>
-                             <a href="https://www.moveforhunger.org/the-environmental-impact-of-food-waste/">Learn More</a>,
+                    <div class="col-md-10 col-sm-10 col-xs-10">
+                        <h4 class="smFont padded bold">Food waste = Methane Gas
+                            <br> Methane Gas = Rising Temperatures
+                            <br> Rising Temperatures = Climate Change
+                            <br> </h4>
+                        <h4 class="smFont">
+                            <a href="https://www.moveforhunger.org/the-environmental-impact-of-food-waste/">Learn More</a>
                         </h4>
                     </div>
+                </div>
+            </div>
+            <div class="row foodWhy">
+                <div class="col justify-content-center">
+                    <h2>How can we make it easier for people to reduce their food waste?</h2>
                 </div>
             </div>
         </div>
