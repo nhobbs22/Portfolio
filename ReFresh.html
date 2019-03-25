@@ -10,7 +10,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
         crossorigin="anonymous">
-        <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8">
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -20,8 +20,9 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
         crossorigin="anonymous"></script>
-    <link rel="shortcut icon" type="image/png" href="logored.png">
-    
+    <script src="custom.js"></script>
+    <link rel="shortcut icon" type="image/png" href="tashlogo.png">
+
 </head>
 
 <style>
@@ -45,7 +46,6 @@
         font-size: 62px;
         text-align: center;
         font-family:'coolvetica_rg';
-        /*font-style: bold;*/
         color: #082600;
     }
 
@@ -53,7 +53,6 @@
         font-size: 40px;
         text-align: center;
         font-family: 'coolvetica_rg';
-        /*font-style: bold;*/
         color: #082600;
     }
 
@@ -73,13 +72,25 @@
 
     }
 
+    h4.change {
+        font-size: 22px;
+    }
+    h4.bold {
+        font-weight: 600;
+    }
+
+     h2.link {
+        color: #EFFDEE;
+        font-size:50px;
+    }
+
     .container {
         text-align: center;
     }
 
     .container.refresh {
-        padding-left: 8%;
-        padding-right: 8%;
+        padding-left: 6%;
+        padding-right: 6%;
         padding-top: 175px;
     }
 
@@ -98,24 +109,7 @@
     }
 
     .row.foodWhy {
-        padding-top: 150px;
-    }
-
-    .trash-col {
-        background-image: url("backgroundtrash.png");
-        background-size: 95%;
-        height: 329px;
-        background-repeat: no-repeat;
-    }
-
-    .earth-col {
-        background-image: url("backgroundearth.png");
-        background-size: 95%;
-        height: 329px;
-        background-repeat: no-repeat;
-
-
-
+        padding-top: 50px;
     }
 
     .smFont {
@@ -129,6 +123,9 @@
     .smFont.padded {
         margin-top: 51%;
     }
+    .col.first {
+        padding-top: 50px;
+    }
 
     @media (max-width: 768px) {
         .container.refresh {
@@ -138,9 +135,9 @@
             display: none;
         }
 
-        h1 {
+        h1, {
             font-size: 50px;
-            font-weight: 800
+            font-weight: 800;
         }
 
         .row.howWorks {
@@ -152,7 +149,12 @@
             font-size: 18px;
         }
         .change {
-            font-size: 14px;
+            font-size: 12px;
+        }
+
+        h2.link {
+            font-size: 32px;
+            font-weight:600;
         }
     }
 
@@ -167,7 +169,13 @@
         }
 
         h1 {
-            font-size: 48px;
+            font-size: 42px;
+        }
+
+        h2.link {
+            font-size: 32px;
+            font-weight:400;
+
         }
     }
 
@@ -185,6 +193,11 @@
         h2 {
             font-size: 32px;
             font-weight: 800;
+            
+        }
+        h2.link {
+        font-size: 42px;
+        font-weight: 200;
         }
 
         h3 {
@@ -192,8 +205,8 @@
         }
 
 
-        .change {
-            font-size: 16px;
+        h4.change {
+            font-size: 18px;
         }
     }
 
@@ -202,6 +215,11 @@
             font-size: 28px;
             font-weight: 800;
         }
+        h2.link {
+        font-size: 32px;
+        font-weight: 600;
+        }
+        
 
         h3 {
             font-size: 14px;
@@ -211,7 +229,9 @@
             font-size: 14px;
         }
     }
-
+    .trash-col, .earth-col {
+        padding-top: 20px;
+    }
 
     .col-12 {
         padding-top: 5px;
@@ -244,56 +264,99 @@
     .smFont.padded.bold {
         font-weight: 600;
     }
+   
+    .btn {
+        border-radius: none;
+        border:none;
+    }
+
+    a.btn.btn-primary.col-12 {
+        text-decoration: none;
+    }
+
+    a.bloop:hover {
+        color: #92FC8B;
+    }
+
+    .btn-primary {
+        background-color: #082600;
+        padding-left: auto;
+        padding-right: auto;
+        margin-top: 30px;
+    }
+
+    .btn-primary:hover {
+        background-color: #92FC8B !important;
+        padding-left: auto;
+        padding-right: auto;
+        margin-top: 30px;
+        border-color:#082600
+    }
+
+    .btn-primary:active {
+        border: solid #006B23;
+
+    }
+
+    .btn:focus, .btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.prototype-row {
+    padding-top:100px;
+    
+}
 </style>
 
 <body>
     <div class="container navigation">
         <nav class="navbar navbar-expand-lg navbar-light fixed-top">
             <a class="navbar-brand" href="index.html">
-                <img src="logored.png" height="60" class="d-inline-block" alt="natasha hobbs">
+                <img src="tashlogo.png" height="40" class="d-inline-block" alt="natasha hobbs">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavAltMarkup"
-                aria-expanded="true" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavAltMarkup" aria-expanded="true" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="navbar-collapse justify-content-end mr-4 collapse hide" id="navbarNavDropdown">
                 <ul class="navbar-nav">
 
                     <li class="nav-item mr-4">
-                        <a class="nav-link active" href="ReFresh.html">Portfolio</a>
+                        <a class="nav-link active" href="ReFresh.html">PORTFOLIO</a>
                     </li>
                     <li class="nav-item mr-4">
-                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link" href="about.html">ABOUT</a>
                     </li>
                     <li class="nav-item mr-4">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link" href="contact.html">CONTACT</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </div>
 
-    <div class="container refresh ">
-        <div class="row justify-content-center ">
+    <div class="container refresh">
+        <div class="row justify-content-center">
             <div class="col big ">
-                <img src="refreshmain.png " class="img-fluid " alt="Responsive image ">
+                <img src="refreshmain.png " class="img-fluid " alt="Responsive image">
             </div>
             <div class="col small ">
-                <img src="refresh_mobile.png " class="img-fluid " alt="Responsive image ">
+                <img src="refresh_mobile.png " class="img-fluid " alt="Responsive image">
             </div>
         </div>
-        <div class="row howWorks justify-content-center ">
+        <div class="row howWorks justify-content-center">
             <h1>How It Works</h1>
         </div>
         <div class="row images">
-            <div class="col-12 col-md-4 ">
-                <img src="scan2.png " class="img-fluid " alt="Responsive image ">
+            <div class="col-12 col-md-4">
+                <img src="scan2.png" class="img-fluid" alt="Responsive image">
             </div>
-            <div class="col-12 col-md-4 ">
-                <img src="track2.png " class="img-fluid " alt="Responsive image ">
+            <div class="col-12 col-md-4">
+                <img src="track2.png" class="img-fluid" alt="Responsive image">
             </div>
-            <div class="col-12 col-md-4 ">
-                <img src="monitor2.png " class="img-fluid " alt="Responsive image ">
+            <div class="col-12 col-md-4">
+                <img src="monitor2.png" class="img-fluid" alt="Responsive image">
             </div>
         </div>
         <div class="row titles">
@@ -317,17 +380,18 @@
                 <h2>The Process</h2>
                 <br>
                 <h3>
-                    <a href="#YourAnchor">See Research Process</a>
+                    <a class="bloop" href="#YourAnchor"> See Research Process</a>
                     <br>
                     <br>
-                    <a href="#YourAnchor2">See Design Process</a>
+                    <a class="bloop" href="#YourAnchor2">See Design Process</a>
                 </h3>
             </div>
         </div>
 
         <div class="row foodWhy">
-            <div class="col justify-content-center">
+            <div class="col first justify-content-center">
                 <h1>Why Food Waste?</h1>
+                <br>
                 <br>
                 <br>
                 <h4 class="change">
@@ -341,36 +405,63 @@
         </div>
         <div class="row">
             <div class="trash-col col-md-6 col-sm-12 col-xs-12">
-                <div class="row justify-content-center">
-                    <div class="col-md-10 col-sm-10 col-xs-10">
-                        <h4 class="smFont first">According to a study done by the
-                            <a href="https://www.nrdc.org/sites/default/files/wasted-2017-report.pdf">NRDC</a>, households are the main source of foodwaste.
-                            <b> 76 billion pounds</b> of food is wasted in households anually in the USA. </h4>
-                    </div>
-                </div>
+                <a href="https://www.nrdc.org/sites/default/files/wasted-2017-report.pdf">
+                    <img src="waste.png" class="img-fluid" alt="Waste Facts" id="waste" data-src="waste.png" data-hover="waste_hover.png">
+                </a>
             </div>
+
             <div class="earth-col col-md-6 col-sm-12 col-xs-12">
-                <div class="row justify-content-center">
-                    <div class="col-md-10 col-sm-10 col-xs-10">
-                        <h4 class="smFont padded bold">Food waste = Methane Gas
-                            <br> Methane Gas = Rising Temperatures
-                            <br> Rising Temperatures = Climate Change
-                            <br> </h4>
-                        <h4 class="smFont">
-                            <a href="https://www.moveforhunger.org/the-environmental-impact-of-food-waste/">Learn More</a>
-                        </h4>
-                    </div>
-                </div>
-            </div>
-            <div class="row foodWhy">
-                <div class="col justify-content-center">
-                    <h2>How can we make it easier for people to reduce their food waste?</h2>
-                </div>
+                <a href="https://www.moveforhunger.org/the-environmental-impact-of-food-waste/">
+                    <img src="earth.png" class="img-fluid" alt="Waste Impact on Earth" id="earth">
+                </a>
+                </h4>
             </div>
         </div>
+        <div class="row foodWhy">
+            <div class="col justify-content-center">
+                <h4 class="change bold">How can we make it easier for people to reduce their food waste?</h4>
+            </div>
+        </div>
+        <div class="process-row">
+            <div class="research-col-12">
+                <a name="YourAnchor" class="btn btn-primary col-12" data-toggle="collapse" href="#collapseExample" role="button"
+                    aria-expanded="false" aria-controls="collapseExample" data-target="#collapseExample">
+                    <h2 class="link">Research Process</h2>
+                </a>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                        proident.
+                    </div>
+                </div>
+            </div>
+            <div class="process-row">
+                <div class="research-col-12">
+                    <a name="YourAnchor2" class="btn btn-primary col-12" data-toggle="collapse" href="#earthCollapse"
+                        role="button" aria-expanded="false" aria-controls="earthCollapse" data-target="#EarthCollapse">
+                        <h2 class="link">Design Process</h2>
+                    </a>
+                    <div class="collapse" id="earthCollapse">
+                        <div class="card card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                            squid.
+                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                            proident.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="prototype-row">
+                <img src="screeens.png" class="img-fluid" alt="ReFresh Prototype Screens">
+                <div class="col-12">
+                    <a href=""
+                </div>
+            </div>
+
+        </div>
     </div>
-
-
 </body>
 
 </html>
