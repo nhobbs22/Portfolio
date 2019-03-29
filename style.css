@@ -1,5 +1,5 @@
 
-.navbar {
+ .navbar {
     background: white;
     padding-top: 1.5rem;
     padding-right: 0rem !important;
@@ -8,14 +8,13 @@
     margin:auto; 
 }
 
-@media (max-width: 990px) {
-    .navbar {
-        padding-right: 2rem !important;
-    }
+
+button.navbar-toggler {
+    position: fixed;
+    top: 1.5rem;
+    right:2rem;
 }
-
-
-#menuButton.navbar-toggler-icon { /* for menu button mobile and ipad */
+#menuButton { /* for menu button mobile and ipad */
     background-image: url("iconMenu.png") !important;
 }
 
@@ -26,9 +25,11 @@
     color: black !important;
     font-size: 18px;
     margin: auto;
-    font-weight: 400;
+    font-weight: 300;
+    text-decoration: none;
     
 }
+
 
 #navbarNavDropdown a.nav-link:hover {
     font-weight: 600; 
@@ -44,64 +45,19 @@
 
 .dropdown-menu {
     position: relative !important;
+    top:10%;
 }
 
 
 #logoHome {
-    display: block;
-    vertical-align: none;
+    position:fixed;
+    top:1.5rem;
+    left:2rem;
 }
 
 div.bio {
     margin-top: 6rem;
 }
-
-
-/*.arrow-2-x{  
-    height: 3em;
-    width: 3em;
-    position: relative;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 7rem;
-    cursor: pointer;
-  }
-  .arrow-2-x::before, .arrow-2-x::after {
-    height: 26px;
-    width: 2px;
-    background: #afafaf;
-    content: "";
-    position: absolute;
-      transition: all 0.5s ease;
-  }
-    .arrow-2-x::before {
-    top: 0em;
-    right: 0em;
-    -ms-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-  .arrow-2-x::after {
-    top: 0em;
-    right: 18px;
-    -ms-transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-  }
-  .x-ready::before, .x-ready::after {
-      right: .9em;
-  }
-  .x-ready::before {
-  transform: rotate(-45deg);	
-  }
-  .x-ready::after {
-      transform: rotate(45deg);
-  }*/
 
   .arrow {
     width: 0; 
@@ -112,7 +68,9 @@ div.bio {
     border-top: 20px solid #f00;
   }
   
-  /*.navbar-toggler:focus, .navbar-toggler:active {
-    outline: none !important;
-    box-shadow: none !important;
-  }*/
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;

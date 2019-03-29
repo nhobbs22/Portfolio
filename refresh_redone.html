@@ -1,8 +1,9 @@
+
 <!doctype html>
 <html lang="en">
 
 <head>
-    <title>ReFresh</title>
+    <title>Natasha Hobbs</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,6 +11,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
         crossorigin="anonymous">
+    <link rel= "stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900" rel="stylesheet">
     <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8">
 
     <!-- Optional JavaScript -->
@@ -20,37 +23,230 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
         crossorigin="anonymous"></script>
-    <script src="custom.js"></script>
-    <link rel="shortcut icon" type="image/png" href="tashlogo.png">
-
+        <link rel="shortcut icon" type="image/png" href="selfPortrait.png">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container navigation">
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-            <a class="navbar-brand" href="index.html">
-                <img src="tashlogo.png" height="40" class="d-inline-block" alt="natasha hobbs">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavAltMarkup" aria-expanded="true" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon" id="menu"></span>
-            </button>
-            <div class="navbar-collapse justify-content-end mr-4 collapse hide" id="navbarNavDropdown">
-                <ul class="navbar-nav">
+            <nav class="row navbar navbar-expand-lg navbar-light fixed-top">
+                <a class="navbar-brand" href="index.html" id=logoHome>
+                    <img src="toomanylogo.png" height="30" class="d-inline" alt="natasha hobbs">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavAltMarkup" aria-expanded="true" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" id="menuButton"></span>
+                </button>
+                <div class="navbar-collapse justify-content-end mr-4 collapse hide" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+        
+                        <li class="nav-item mr-4">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" href="ReFresh.html">Refresh App Concept</a>   
+                                    </div>
+                        </li>
+                        <li class="nav-item mr-4">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item mr-4">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        
+
     
-                    <li class="nav-item mr-4">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio</a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item" href="ReFresh.html">Refresh App Concept</a>   
-                                </div>
-                    </li>
-                    <li class="nav-item mr-4">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item mr-4">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
+    <style>
+    
+ .reFresh {
+        margin-top: 10rem;
+        padding-left:10%;
+        padding-right:10%;
+    }
+    
+
+    .row {
+        
+    }
+
+    .colPadding  {
+        padding-top: 3rem;
+    }
+
+    #reFreshLogin {
+        max-width: 100%;
+        height:auto;
+    }
+
+    #logoRefresh {
+    max-width: 18%;
+    height: auto;
+    margin-bottom: 100px;
+
+    }
+
+    h1.cool {
+        font-size: 62px;
+        text-align: center;
+        font-family:'coolvetica_rg';
+        letter-spacing: 1px;
+    }
+
+    .morePad {
+        padding-right:7%;
+    }
+
+    
+
+    </style>
+    <div class="container reFresh">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-12">
+                <!--<h1 class="cool">ReFresh</h1>>-->
+               <img src="reFreshLogo.png" id="logoRefresh" class="center">
             </div>
-        </nav>
+            <div class="col-md-9 col-lg-10 colPadding align-items-center morePad">
+                <h1>Save Money. Reduce Your Carbon Footprint.</h1>
+                <br>
+                <h2> Refresh is a mobile app concept created to help you predict 
+                the number of perishables you use and how to store them before they spoil. 
+                 ReFresh will monitor your consumption and waste trends, and will 
+                generate a shopping list based on those trends. </h2>
+            </div>
+            <div class="col-lg-2 col-md-3 col-xs-6 colPadding justify-content-right">
+                <img class="center" src="reFreshPhone1.png" id=reFreshLogin>
+            </div>
+        </div>
+        <div class="row"></div>
     </div>
+
+    
 </body>
+<style>
+
+
+
+h1 {
+    font-size: 1.68rem;
+    font-family: 'Rubik', sans-serif;;
+    color:black;
+    font-weight: 400;
+    /*text-align: center;*/
+    line-height: 40px;
+    
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight:200;
+    color: black;
+    font-size:1.25rem;
+    line-height: 40px;
+    word-spacing:1px;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #006B23;
+
+}
+
+h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #082600;
+
+}
+
+h4.change {
+    font-size: 22px;
+}
+h4.bold {
+    font-weight: 600;
+}
+
+@media (max-width: 576px) {
+h1 {
+font-size: 1.6rem;
+line-height: 35px;
+}
+#logoRefresh {
+    max-width: 25%;
+    height: auto;
+    margin-bottom: 50px;
+}
+h2{
+    font-size: 1rem;  
+}
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+h1 {
+    text-align: center;
+    font-size: 1.3rem;
+} 
+h2 {
+    font-size: 1rem;
+    line-height: 2rem;
+} 
+.morePad {
+        padding-right:0%;
+    }
+ 
+#logoRefresh {
+    max-width: 25%;
+    height: auto;
+    margin-bottom: 50px;
+}
+#reFreshLogin {
+    max-width: 30%;
+    height:auto;
+    }
+    .colPadding  {
+        padding-top: 2.5rem;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+h1 {
+    font-size: 1.7rem;
+    line-height: 35px;
+}
+h2 {
+font-size: 1rem;
+line-height: 30px;
+}
+.morePad {
+        padding-right:6%;
+    }
+
+ .reFresh {
+        padding-left:8%;
+        padding-right:8%;
+    }
+}
+@media (min-width: 978px) and (max-width:1199px) {
+.colPadding {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.morePad {
+    padding-right: 7%;
+}
+h2 {
+    font-size: 1.1rem;
+}
+}
+
+
+
+
+
+</style>
+
+</html>
