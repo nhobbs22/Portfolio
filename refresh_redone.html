@@ -60,16 +60,20 @@
     
     <style>
     
+body {
+    background-color: #F2F2F2;
+}
  .reFresh {
-        margin-top: 10rem;
+        margin-top: 7rem;
+        padding-top: 5rem;
         padding-left:10%;
         padding-right:10%;
+        background-color: white;
+        border: 0px solid #BFBFBF;
+        box-shadow: 0px 2px 13px #BFBFBF;
     }
     
 
-    .row {
-        
-    }
 
     .colPadding  {
         padding-top: 3rem;
@@ -81,9 +85,9 @@
     }
 
     #logoRefresh {
-    max-width: 18%;
+    max-width: 22%;
     height: auto;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
 
     }
 
@@ -98,6 +102,13 @@
         padding-right:7%;
     }
 
+    .howItWorks {
+        padding-top: 6rem;
+    }
+
+    .centerText {
+        text-align: center;
+    }
     
 
     </style>
@@ -119,7 +130,57 @@
                 <img class="center" src="reFreshPhone1.png" id=reFreshLogin>
             </div>
         </div>
-        <div class="row"></div>
+        <div class="row howItWorks">
+            <div class="col-12 justify-content-center">
+            <h1 class="centerText">How it Works</h1>
+            </div>
+            <!-- Scan grocery reciept column-->
+            <div class="col-xs-12 col-4">
+                <br>
+                    <h2 class="centerText">Scan grocery reciept</h2>
+                <div class="row">
+                    <div class="col">
+                        <img src="scanpg.png" id="scan reciept" class="center" class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="confirm_purch.png" id="scan reciept" class="center" class="img-fluid">
+                    </div>
+                </div>  
+                <br>
+                <h2 class="centerText"> and confirm purchases.</h2>          
+            </div> 
+            <!-- Track your food Intake column-->
+            <div class="col-xs-12 col-4">
+                    <br>
+                        <h2 class="centerText">Scan grocery reciept</h2>
+                    <div class="row">
+                        <div class="col">
+                            <img src="scanpg.png" id="scan reciept" class="center" class="img-fluid">
+                        </div>
+                        <div class="col">
+                            <img src="confirm_purch.png" id="scan reciept" class="center" class="img-fluid">
+                        </div>
+                    </div>  
+                    <br>
+                    <h2 class="centerText"> and confirm purchases.</h2>          
+                </div>
+                <!-- Monitor your waste trends column -->
+            <div class="col-xs-12 col-4">
+                    <br>
+                        <h2 class="centerText">Scan grocery reciept</h2>
+                    <div class="row">
+                        <div class="col">
+                            <img src="scanpg.png" id="scan reciept" class="center" class="img-fluid">
+                        </div>
+                        <div class="col">
+                            <img src="confirm_purch.png" id="scan reciept" class="center" class="img-fluid">
+                        </div>
+                    </div>  
+                    <br>
+                    <h2 class="centerText"> and confirm purchases.</h2>          
+                </div>
+             
+         </div>
     </div>
 
     
@@ -129,7 +190,7 @@
 
 
 h1 {
-    font-size: 1.68rem;
+    font-size: 28px;
     font-family: 'Rubik', sans-serif;;
     color:black;
     font-weight: 400;
@@ -142,7 +203,7 @@ h2 {
     font-family: 'Poppins', sans-serif;
     font-weight:200;
     color: black;
-    font-size:1.25rem;
+    font-size:20px;
     line-height: 40px;
     word-spacing:1px;
 }
