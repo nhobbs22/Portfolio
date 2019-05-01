@@ -35,6 +35,7 @@
         text-align: center;
         font-weight: 400;
         font-size: 18px;
+
     }
 
     h1 {
@@ -125,6 +126,9 @@
     height:250px;
     width:121.17px;
 }
+h1 {
+    font-size: 32px;
+}
 
      /*#reFresh {
          padding:50px;
@@ -177,6 +181,7 @@
   }
 }
 
+ 
 @keyframes fadeIn2b {
   0% {
     opacity: 0;
@@ -188,7 +193,7 @@
 
   50% {
       opacity: 40%;
-      letter-spacing: 14px;
+      letter-spacing: 12px;
   }
 
   100% {
@@ -196,6 +201,28 @@
     letter-spacing: 6.48px;
   }
 }
+@media (max-width:320px){
+    @keyframes fadeIn2b {
+  0% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 0;
+  }
+
+  50% {
+      opacity: 40%;
+      letter-spacing: 10px;
+  }
+
+  100% {
+    opacity: 1;
+    letter-spacing: 6.48px;
+  }
+} 
+}
+
 
 @keyframes fadeIn3 {
   0% {
@@ -258,14 +285,14 @@
   animation-duration: 1.5s;
 }
 
-.secondAnimate, .h1Change {
+.secondAnimate, span.h1Change {
 
   animation-name: fadeIn2;
   animation-delay: 0s;
   animation-duration: 3s;
 }
 
-.h1Change {
+span.h1Change {
 
 animation-name: fadeIn2b;
 animation-delay: 0s;
@@ -325,8 +352,21 @@ img#refreshLogo.center {
         border: 0px solid #BFBFBF;
         box-shadow: 0px 2px 13px #BFBFBF;
     }
+
+ 
 body {
+    background-color: #DED7D9;
+    background-color: #E3DEDF;
+    background-color: #E6E3E4;
     background-color: #F2F2F2;
+    background-color: #F0EDEE;
+}
+
+@media (max-width:575px) {
+    .main {
+       width:90%;
+       margin:auto;
+    }
 }
 
 </style>
@@ -338,8 +378,8 @@ body {
             <a class="navbar-brand" href="index.html" id=logoHome>
                 <img src="toomanylogo.png" height="32" class="d-inline" alt="natasha hobbs">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavAltMarkup" aria-expanded="true" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon" id="menuButton"></span>
+            <button class="navbar-toggler" type="button" id="menuButton" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavAltMarkup" aria-expanded="true" aria-label="Toggle navigation">
+               <!-- <span class="navbar-toggler-icon" id="menuButton"></span> -->
             </button>
             <div class="navbar-collapse justify-content-end collapse hide" id="navbarNavDropdown">
                 <ul class="navbar-nav">
@@ -347,7 +387,7 @@ body {
                     <li class="nav-item mr-4">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio</a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item" href="refresh_redone.html">Refresh App Concept</a>   
+                                    <a class="dropdown-item" href="refresh_redone.html">ReFresh App Concept</a>   
                                 </div>
                     </li>
                     <li class="nav-item mr-4">
@@ -365,7 +405,7 @@ body {
             <div class="title col-12 justify-content-center">
                 <h3 class="firstAnimate">I am</h3>
             </div>
-            <div class="title col-10 col-lg-12 justify-content-center">
+            <div class="title col-12 col-sm-10 col-lg-12 justify-content-center">
                     <h1 class="secondAnimate">NATASHA <span class="h1Change"> ALEXANDRA</span> HOBBS</h1>
             </div>
             <div class="title col-6 col-lg-4 portrait justify-content-center">
@@ -381,7 +421,7 @@ body {
     </div>
 
 
-   <!-- <div class="container caseStudies">
+    <div class="container caseStudies">
         
         <div class="row justify-content-center">
             <div class="col-12 justify-content-center">
