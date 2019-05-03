@@ -70,6 +70,14 @@
 
     }
 
+    .black {
+    color: black;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    font-size: 48px;
+    text-transform: uppercase;   
+}
+
 .bio {
     padding-top: 2em;
 }
@@ -105,6 +113,11 @@
                 font-size: 16px;
         }
 
+        .black {
+            font-size: 34px;
+            font-weight: 500px;
+        }
+
         img#portrait {
             height: 133px;
             width: 146px;
@@ -128,6 +141,11 @@
 }
 h1 {
     font-size: 32px;
+}
+
+.black {
+    font-size: 38px;
+    font-weight: 600px;
 }
 
      /*#reFresh {
@@ -317,12 +335,10 @@ img#portrait {
 }
 
 .caseStudies {
-    margin-top: 4rem;
+    margin-top: 3rem;
 }
 
-h1.black {
-    color:black;
-}
+
 
 /*#reFreshBtn {
     background-color: #92FC8B;
@@ -347,17 +363,28 @@ img#refreshLogo.center {
     padding: 2rem;
 }
 .main {
-        margin-top: 7rem;
+        margin-top: 6rem;
         background-color: white;
-        border: 0px solid #BFBFBF;
+        border: .01px solid #BFBFBF;
         box-shadow: 0px 2px 13px #BFBFBF;
-        padding-top: 15px;
+        padding-top: 25px;
+        padding-bottom:20px;
     }
     .caseStudies {
         margin-top: 2rem;
         background-color: white;
-        border: 0px solid #BFBFBF;
+        border: .01px solid #BFBFBF;
         box-shadow: 0px 2px 13px #BFBFBF;
+        
+    }
+
+    .firstStudy {
+        margin-top: .5rem;
+        background-color: white;
+        border: .01px solid #BFBFBF;
+        box-shadow: 0px 2px 13px #BFBFBF;
+        border-radius:6px;
+        
     }
  
 body {
@@ -366,14 +393,41 @@ body {
     background-color: #E6E3E4;
     background-color: #F2F2F2;
     background-color: #F0EDEE;
+    background-color: #E6E6E6;
 }
 
 @media (max-width:575px) {
     .main {
-       width:90%;
+       width:95%;
+    }
+    .caseStudies {
+        width:95%;
+    }
+    .firstStudy {
+        width:95%;
     }
 }
 
+.titleBar {  
+    padding-top: 20px; 
+    background-color:rgba(221, 0, 49, 0.7);    
+}
+
+#reFresh {
+    background-image: url("splash.png");
+    background-size:100%;
+    height:375px;
+   
+}
+
+
+
+.caseStudy1 {
+    padding-top:2rem;
+}
+#reFreshImg {
+    padding-top: 2rem;
+}
 </style>
 
 <body>
@@ -425,26 +479,27 @@ body {
 
     <div class="container caseStudies">
         
-        <div class="row justify-content-center">
+        <div class="row justify-content-center titleBar">
             <div class="col-12 justify-content-center">
-                <H1 class="black">CASE STUDIES</H1>
+                <H2 class="black">Case Studies</H2>
             </div>
         </div>
-
-        <div class="row justify-content-center align-items-center">
-            <div class="col-sm-4" id=reFresh>
+    </div>
+    
+    <div class="container firstStudy">
+        <div class="row justify-content-center align-items-center caseStudy1">
+            <div class="col-sm-6 align-items-center" id=reFresh height="400">
                 <img class="center" src="reFreshPhone1.png" id=reFreshImg>
             </div>
 
-            <div class="col-sm-8 align-items-center summary">
+            <div class="col-sm-6 align-items-center summary">
                 <h2>Save Money. Reduce Your Carbon Footprint.</h2>
                 <br>
-                <p> A mobile app concept created to help you predict the number of perishables you use and how to store them before they spoil.  ReFresh will monitor your consumption and waste trends, and will generate a shopping list based on those trends. </p>
                 </div>
         </div>
     </div>
 
-    </div>
+</div>
 -->        
        <!-- <div class="row">
             <div class="col-9 col-md-4">
