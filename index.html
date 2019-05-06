@@ -83,8 +83,7 @@
 }
 
  img#portrait {
-     padding-left:25px;
-     padding-bottom: 1rem;
+     margin-bottom: .75rem;
  }  
  
  .title.col-4, .title.col-12, .title.col-10 {
@@ -118,10 +117,6 @@
             font-weight: 500px;
         }
 
-        img#portrait {
-            height: 133px;
-            width: 146px;
-            padding-left:5px;
         }  
         #reFreshImg{
             height:250px;
@@ -129,11 +124,6 @@
         }
     }
  @media (min-width: 576px) and (max-width:768px) {
-    img#portrait {
-    padding-left:10px;
-    height:200px;
-    width:220px;
-     }
 
     #reFreshImg{
     height:250px;
@@ -152,11 +142,7 @@ h1 {
  }
 
   @media (min-width: 978px) and (max-width:1199px) {
-     img#portrait {
-    padding-left:10px;
-    height:200px;
-    width:220px;
-     }
+ 
  }
 
  @keyframes fadeIn {
@@ -424,6 +410,13 @@ body {
     padding-top:2rem;
 }
 
+.centerPortrait {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+
 </style>
 
 <body>
@@ -461,7 +454,7 @@ body {
                     <h1 class="secondAnimate">NATASHA <span class="h1Change"> ALEXANDRA</span> HOBBS</h1>
             </div>
             <div class="title col-6 col-lg-4 portrait justify-content-center">
-                <img id="portrait" src="selfPortrait.png" height="300" class="center" alt="Natasha Portrait">
+                <img id="portrait" src="natashaPortrait2.png" height="300" class="centerPortrait" alt="Natasha Portrait">
             </div>
             <div class="title col-12 justify-content-center">
                 <h3 class="thirdAnimate">and I am a</h3>
