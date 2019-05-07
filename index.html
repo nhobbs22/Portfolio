@@ -42,7 +42,7 @@
         font-family: 'Montserrat', sans-serif;
         font-size: 36px;
         font-weight: 700; 
-        letter-spacing: 7.58px;
+        letter-spacing: 7.5px;
         text-align: center;
         color: #dd0031;
 
@@ -59,7 +59,7 @@
 
     span.h1Change {
         font-weight: 500; 
-        letter-spacing: 6.48px;
+        letter-spacing: 6.4px;
         color: black;
     }
 
@@ -85,8 +85,8 @@
  
  
  .title.col-4, .title.col-12, .title.col-10 {
-     padding-top:10px;
-     padding-bottom: 10px;
+     padding-top:1rem;
+     
  }
 
 .center {
@@ -173,7 +173,7 @@ h1 {
 
   100% {
     opacity: 1;
-    letter-spacing: 7.58px
+    letter-spacing: 7.5px
   }
 }
 
@@ -194,7 +194,7 @@ h1 {
 
   100% {
     opacity: 1;
-    letter-spacing: 6.48px;
+    letter-spacing: 6.4px;
   }
 }
 @media (max-width:320px){
@@ -346,8 +346,8 @@ img#refreshLogo.center {
         background-color: white;
         border: .0px solid #D1D1D1;
         box-shadow: 0px 2px 13px #D1D1D1;
-        padding-top: 25px;
-        padding-bottom:20px;
+        padding-top: 1.6rem;
+        padding-bottom: 1.6rem;
     }
     .caseStudies {
         margin-top: 2rem;
@@ -386,6 +386,29 @@ body {
     }
 }
 
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px) 
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : portrait) { 
+    
+    .portraitResize {
+    /* max-width: 100%; */
+    height: auto;
+    max-width: 100%;
+ }
+
+ .main {
+     padding-top:4rem;
+     padding-bottom: 4rem;
+ }
+}
+
+#portrait {
+    margin-top: 1rem;
+    margin-bottom:1rem;
+
+}
 .titleBar {  
     padding-top: 20px; 
     background-color: white;
@@ -419,7 +442,7 @@ body {
 .portraitResize {
     /* max-width: 100%; */
     height: auto;
-    max-width: 95%;
+    max-width: 99%;
 }
 
 </style>
@@ -455,7 +478,7 @@ body {
             <div class="title col-12 justify-content-center">
                 <h3 class="firstAnimate">I am</h3>
             </div>
-            <div class="title col-12 col-sm-10 col-lg-12 justify-content-center">
+            <div class="title col-10 col-md-12 justify-content-center">
                     <h1 class="secondAnimate">NATASHA <span class="h1Change"> ALEXANDRA</span> HOBBS</h1>
             </div>
             <div class="title col-6 col-lg-4 portrait justify-content-center">
